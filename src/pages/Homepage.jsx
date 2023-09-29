@@ -7,7 +7,9 @@ import Card from 'react-bootstrap/Card';
 const Homepage = () => {
   const [ darkMode, setDarkMode ] = React.useState(false);
 
-  const { data, error, isLoading } = useFetchHomeQuery();
+  const { data} = useFetchHomeQuery();
+   
+  
   const toogleDarkMode = () => {
     setDarkMode(!darkMode);
   }
